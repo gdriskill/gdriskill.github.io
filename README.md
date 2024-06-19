@@ -1,4 +1,1 @@
 # gdriskill.github.io
-
-
-xczjbvjxbkjxhkvbxckh
