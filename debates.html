@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Grace Driskill</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="./index.html"> Grace Driskill</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron">
+      <div class="container text-center">
+        <h1>Adjective Ordering in Presidential Speeches and Debates</h1>      
+        <p>blah blah blah</p>
+      </div>
+  </div>
+  <div class="main-text">
+      <p>
+        This project is an individual final project for the Meaning in Language course (LING 8803) at Georgia Tech in Spring 2024.
+        When considering the ordering of multiple adjectives in a noun phrases, speakers have typical 
+        preferences for what sounds correct. For example, “the small white car” sounds more natural that
+        “the white small car.” This project explores if adjective ordering preferences are followed to the 
+        same extent in US presidential speeches and debates as they are in general language. The 
+        subjectivity-based preference suggested by Scontras et. al. 2017 is tested in a corpus of US 
+        presidential speeches and US presidential candidate debates. These adjective ordering 
+        preferences are due to the speaker wanting the listener to understand the referent object (Scontras 
+        et. al. 2019), but the persuasive nature of political contexts brings to question if the speaker is still
+        trying to help the listener.
+      </p>
+      <p>
+        For this project, I found the texts of speeches by US presidential and presidental canidate debates from The Miller Center at University of Virginia and The American Presidency Project at UC Santa Barbara, respectively.
+        Subjectivity scores for 78 adjectives from the Scontras et. al. 2017 study were found on Github.
+        Although this project was not very computationally heavy, it did involve writing some Python scripts to work with the text data.
+      </p>
+      <p>
+        I extracted the adjective-adjective-noun (ANN) phrases that contained one of the 78 target adjectives by searching the texts for instances of the adjectives, and then using SpaCY, a
+        natural language processing library, to tag word's part of speech to identify AAN phrases. I used Python to calculate values for the anaylsis such as adjective's average distance from the noun (0 distance is directly next to the noun), and the difference in subjectivity between adjectives in AAN phrases. 
+        I also used a Python script to search the extracted AAN phrases for instances where subjectivity scores for both adjectives were available, and for phrases not following Scontras et. al. adjectivty ordering theory.
+      </p>
+      <p>
+        <a href="">Github repository</a> <a href="reports/final_report_connect4.pdf">Project Report</a> .
+      </p>
+  </div>
+
+</body>
+</html>

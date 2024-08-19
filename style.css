@@ -1,0 +1,31 @@
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+  
+footer {
+  background-color: #f2f2f2;
+  padding: 25px;
+}
+
+.main-text{
+    margin-left:auto;
+    margin-right:auto;
+    text-align:left;
+    width: 700px; 
+}
+
+.social-links{
+  font-size: 50px;
+  text-align: center;
+}
+
+.button-link{
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: lightslategray;
+  border-radius: 25px;
+  color:black;
+  align-content: center;
+}

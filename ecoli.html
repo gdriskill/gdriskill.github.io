@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Grace Driskill</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ 
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="./index.html"> Grace Driskill</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron">
+      <div class="container text-center">
+        <h1>Ecoli Pathotype Prediction</h1>      
+        <p>Blah blah blah</p>
+      </div>
+  </div>
+  <div class="main-text">
+    <p>
+      This project was a group final project for the Machine Learning in Computational Biology course (CSE 7850) at Georgia Tech in Spring 2024. 
+      We tested several machine learning models against whole-genome shotgun short-read sequences to identify the most effective ML approach in predicting E. coli pathotypes.
+    </p>
+    <p>
+      Using a dataset of approximately 22,000 sequenced E. coli isolates, we identified pathotype-specific virulence genes using the BLAST algorithm, revealing six unique pathotypes and 427 unique virulence factors
+      We selected ML classification models with diverse approaches: Decision Tree (DT), Gradient Boosting (GB), K-nearest Neighbor (KNN), Logistic Regression (LR), Multi-layer Perceptron (MLP), Random Forest (RF), and Support Vector Classification (SVC).
+      We then trained those models on the raw data using a 70/30 split for training and validation to get baseline performance metrics (accuracy, precision, recall, F1-score) for each model. 
+    </p>
+    <p>
+      Next, we applied two feature engineering techniques, Multiple Correspondence Analysis (MCA) and Recursive Feature Elimination with Cross-Validation (RFECV), to improve performance. 
+      Following feature engineering, we performed hyperparameter tuning and retrained the models using the same split.
+      Finally, we evaluated the models on an unseen dataset of E. coli genomes.  
+    </p>
+    <p>
+      My personal contributions to the project include writing the code for training and evaluating the models, and feature selection using RFECV. I also wrote the section in the report about the feature selection, and contributed to editing our final report.
+    </p>
+      <a href="./reports/final_report_ecoli.pdf">Project report</a>  
+    </p>
+  </div>
+
+</body>
+</html>

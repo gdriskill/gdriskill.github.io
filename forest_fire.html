@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Grace Driskill</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="./index.html"> Grace Driskill</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron">
+      <div class="container text-center">
+        <h1>Forest Fire Burn Area Prediction</h1>      
+        <p>blah blah blah</p>
+      </div>
+  </div>
+  <div class="main-text">
+      <p>
+        This project is an individual final project for the Computational Data Analysis course (CSE 6740) at Georgia Tech in Fall 2023. The primary objective of the project was to create a regression model capable of estimating the burn area for a specific location on a given day given geographic, temporal and meteorological data. Such predictions have the potential to be useful for forest fire management, aiding in assessing potential fire severity and optimizing the allocation of resources. 
+      </p>
+      <p>
+        The dataset used for this project is originally from Cortez and Morais 2007, which is available in the <a href="https://archive.ics.uci.edu/dataset/162/forest+fire">UCI Machine Learning Repository</a>. I developed three different regression models: linear regression, support vector regression (SVR), and artificial neural network (ANN). The linear regression and SVM models were implemented using Scikit-learn, while the ANN model was built using PyTorch.
+      </p>
+      <p>
+        To evaluate the performance of these models, I compared them using mean squared error (MSE) as the metric for prediction accuracy, and the generalization gap, which is the difference between training and test errors, to determine how well the models could generalize to unseen data. The results revealed that the linear regression model achieved the best test error, indicating its high predictive accuracy on new data. On the other hand, the SVR model demonstrated the best generalization capability with the smallest generalization gap. The ANN showed signs of overfitting; the model had the largest difference between test and training error, along with the lowest training error. 
+      </p>
+      <p>
+        <a href="https://github.com/gdriskill/CSE6740-Project.git">Github repository</a> <a href="./reports/final_report_fires.pdf">Project report</a>.
+      </p>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>GT Bus Simulation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="./index.html"> Grace Driskill</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        
+        </div>
+      </div>
+  </nav>
+    
+
+  <div class="jumbotron">
+      <div class="container text-center">
+        <h1>GT Stinger Bus Simulation</h1>      
+        <p>blah blah blah</p>
+      </div>
+  </div>
+  <div class="main-text">
+      <p>
+          This project was a group final project for the Modeling and Simulation course (CSE 6730) at Georgia Tech in Spring 2024. The goal of this project was to model the behavior of Georgia Tech's on campus bus system, the Stinger Bus, to assess traffic flows and public transportation efficiency. The model uses a timestep-driven approach to simulate the movement of buses and passengers across a bus route consisting of bus stops, traffic lights, and road segments. Buses can exhibit several behaviors, or events, in the simulation such as arriving at a bus stop, departing from a bus stop, traveling across a road segment, or stopping at a traffic light.
+      </p>
+      <p>
+          We ended up only creating a simulation for the GT bus “blue route”, which wraps around Georgia Tech's campus, between the hours of 7 AM and 7 PM. Future extensions of this project could include modeling the other routes in the Stinger Bus system. The model was validated using real-world data from the GT Bus API, and then used to analyze the effects of bus starting points on passenger wait times. 
+      </p>
+      <p>
+          My personal contributions to the project include contributing to the literature review specifically about previous studies focused on a specific aspect of the bus system such as arrival/departure times or waiting times at the bus stop and introduce a way to improve performance. Additionally, I was a part of the subgroup that created the conceptual model and implemented the simulation. 
+      </p>
+      <p>
+        <a href="./reports/final_report_bus.pdf">Project report.
+      </p>
+  </div>
+
+</body>
+</html>
